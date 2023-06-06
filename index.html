@@ -7,7 +7,7 @@
     <title>Test technical code</title>
   </head>
   <body>
-    <form>
+    <form onsubmit="submitForm()">
       <div>
         <input
           type="number"
@@ -15,15 +15,14 @@
           id="input"
           placeholder="Input Angka"
           autocomplete="off"
-          onchange="inputValue(this.value)"
         />
       </div>
       <br />
-      <button type="button" id="btn-generateSegitiga" onclick="generateSegitiga(10)"">Generate Segitiga</button>
-      <button type="button" id="btn-generateBilanganGanjil" onclick="generateBilanganGanjil(10)">
+      <button type="button" id="btn-generateSegitiga">Generate Segitiga</button>
+      <button type="button" id="btn-generateBilanganGanjil">
         Generate Bilangan Ganjil
       </button>
-      <button type="button" id="btn-generateBilanganPrima" onclick="generateBilanganPrima(100)">
+      <button type="button" id="btn-generateBilanganPrima">
         Generate Bilangan Prima
       </button>
     </form>
