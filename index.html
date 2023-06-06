@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test technical code</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <input
+          type="number"
+          name="input"
+          id="input"
+          placeholder="Input Angka"
+          autocomplete="off"
+          onchange="inputValue(this.value)"
+        />
+      </div>
+      <br />
+      <button type="button" id="btn-generateSegitiga" onclick="generateSegitiga(10)"">Generate Segitiga</button>
+      <button type="button" id="btn-generateBilanganGanjil" onclick="generateBilanganGanjil(10)">
+        Generate Bilangan Ganjil
+      </button>
+      <button type="button" id="btn-generateBilanganPrima" onclick="generateBilanganPrima(100)">
+        Generate Bilangan Prima
+      </button>
+    </form>
+    <h1>Result :</h1>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
